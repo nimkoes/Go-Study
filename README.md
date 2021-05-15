@@ -10,13 +10,13 @@
 　  
 　  
   ### 강의 내용 따라하며 정리
-[Go 개발 환경 설정과 Hello World (using 'VS Code')][link_blog_001]
-
-
+[Go 개발 환경 설정과 Hello World (using 'VS Code')][link_blog_001]  
+[Go 의 package 와 import][link_blog_002]  
+ - 실습에서 사용한 main.go 를 제외한 'something' 패키지는 Go 가 설치된 기본 경로의 src 하위로 이동해야 정상 작동 한다.
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
 
 [link_blog_001]:https://xxxelppa.tistory.com/270
-
+[link_blog_002]:https://xxxelppa.tistory.com/271
 
