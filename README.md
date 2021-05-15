@@ -2,7 +2,7 @@
 ## programming language Go study
 　  
 　  
-![enrollment_course](https://github.com/nimkoes/Go-Study/blob/main/assets/images/enrollment_course.JPG?raw=true "enrollment_course"){: width="410px" height="410px"}
+![enrollment_course](https://github.com/nimkoes/Go-Study/blob/main/assets/images/enrollment_course.JPG?raw=true "enrollment_course")
 　  
 　  
   ### nomadcoders : 쉽고 빠른 Go 시작하기  
