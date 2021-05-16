@@ -20,6 +20,7 @@
 [Go 의 for, range, ...args][link_blog_006]  
 [Go 의 if 사용 방법][link_blog_007]  
 [Go 의 switch 사용 방법][link_blog_008]  
+[Go 의 포인터][link_blog_009]  
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
@@ -32,4 +33,5 @@
 [link_blog_006]:https://xxxelppa.tistory.com/275
 [link_blog_007]:https://xxxelppa.tistory.com/276
 [link_blog_008]:https://xxxelppa.tistory.com/277
+[link_blog_009]:https://xxxelppa.tistory.com/278
 
