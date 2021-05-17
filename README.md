@@ -22,6 +22,7 @@
 [Go 의 switch 사용 방법][link_blog_008]  
 [Go 의 포인터][link_blog_009]  
 [Go 의 Array 와 Slice 선언과 기본 사용법][link_blog_010]  
+[Go 의 Map 기본 사용법][link_blog_011]  
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
@@ -35,5 +36,6 @@
 [link_blog_007]:https://xxxelppa.tistory.com/276
 [link_blog_008]:https://xxxelppa.tistory.com/277
 [link_blog_009]:https://xxxelppa.tistory.com/278
-[link_blog_009]:https://xxxelppa.tistory.com/279
+[link_blog_010]:https://xxxelppa.tistory.com/279
+[link_blog_011]:https://xxxelppa.tistory.com/280
 
