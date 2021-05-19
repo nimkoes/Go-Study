@@ -30,11 +30,9 @@
 　  
 　  
 #### BANK & DICTIONARY PROJECTS
-- [Go 'BANK & DICTIONARY PROJECTS' : Account + NewAccount][link_blog_013]  
+- [Account + NewAccount][link_blog_013]  
+- [Methods part One][link_blog_014]  
   
-
-
-
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
@@ -53,4 +51,5 @@
 [link_blog_012]:https://xxxelppa.tistory.com/281
 
 [link_blog_013]:https://xxxelppa.tistory.com/282
+[link_blog_014]:https://xxxelppa.tistory.com/283
 
