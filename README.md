@@ -35,6 +35,7 @@
 - [Methods part Two][link_blog_015]  
 - [Finishing Up][link_blog_016]  
 - [Dictionary part One][link_blog_017]  
+- [Add Method (in map)][link_blog_018]  
   
 
 
@@ -58,4 +59,5 @@
 [link_blog_015]:https://xxxelppa.tistory.com/284
 [link_blog_016]:https://xxxelppa.tistory.com/285
 [link_blog_017]:https://xxxelppa.tistory.com/286
+[link_blog_018]:https://xxxelppa.tistory.com/287
 
