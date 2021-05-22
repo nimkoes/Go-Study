@@ -38,6 +38,14 @@
 - [Add Method (in map)][link_blog_018]  
 - [Update Delete (in map)][link_blog_019]  
   
+　  
+　  
+#### URL CHECKER & GO ROUTINES
+- [hit URL, HTTP GET REQUEST][link_blog_020]  
+  
+　  
+　  
+  
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
@@ -62,4 +70,6 @@
 [link_blog_017]:https://xxxelppa.tistory.com/286
 [link_blog_018]:https://xxxelppa.tistory.com/287
 [link_blog_019]:https://xxxelppa.tistory.com/288
+
+[link_blog_020]:https://xxxelppa.tistory.com/289
 
