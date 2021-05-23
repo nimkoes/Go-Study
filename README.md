@@ -45,6 +45,7 @@
 - [Slow URLChecker, empty map 선언][link_blog_021]  
 - [Goroutines][link_blog_022]  
 - [Channels][link_blog_023]  
+- [Channels Recap, channel response receive using loop (blocking)][link_blog_024]  
   
 　  
 　  
@@ -78,4 +79,5 @@
 [link_blog_021]:https://xxxelppa.tistory.com/290
 [link_blog_022]:https://xxxelppa.tistory.com/291
 [link_blog_023]:https://xxxelppa.tistory.com/292
+[link_blog_024]:https://xxxelppa.tistory.com/293
 
