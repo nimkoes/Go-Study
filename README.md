@@ -43,6 +43,7 @@
 #### URL CHECKER & GO ROUTINES
 - [hit URL, HTTP GET REQUEST][link_blog_020]  
 - [Slow URLChecker, empty map 선언][link_blog_021]  
+- [Goroutines][link_blog_022]  
   
 　  
 　  
@@ -74,4 +75,5 @@
 
 [link_blog_020]:https://xxxelppa.tistory.com/289
 [link_blog_021]:https://xxxelppa.tistory.com/290
+[link_blog_022]:https://xxxelppa.tistory.com/291
 
