@@ -44,6 +44,7 @@
 - [hit URL, HTTP GET REQUEST][link_blog_020]  
 - [Slow URLChecker, empty map 선언][link_blog_021]  
 - [Goroutines][link_blog_022]  
+- [Channels][link_blog_023]  
   
 　  
 　  
@@ -76,4 +77,5 @@
 [link_blog_020]:https://xxxelppa.tistory.com/289
 [link_blog_021]:https://xxxelppa.tistory.com/290
 [link_blog_022]:https://xxxelppa.tistory.com/291
+[link_blog_023]:https://xxxelppa.tistory.com/292
 
