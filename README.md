@@ -48,6 +48,10 @@
 - [Channels Recap, channel response receive using loop (blocking)][link_blog_024]  
 - [Channels One more Recap (요약 정리)][link_blog_025]  
 - [URL Checker + Go Routines][link_blog_026]  
+- [FAST URL Checker][link_blog_027]  
+  
+　  
+　  
   
 　  
 　  
@@ -84,4 +88,5 @@
 [link_blog_024]:https://xxxelppa.tistory.com/293
 [link_blog_025]:https://xxxelppa.tistory.com/294
 [link_blog_026]:https://xxxelppa.tistory.com/295
+[link_blog_027]:https://xxxelppa.tistory.com/296
 

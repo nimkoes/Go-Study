@@ -7,7 +7,7 @@ import (
 )
 
 // channel 을 통해 주고 받을 데이터 타입으로 사용 할 struct 선언
-type result struct {
+type requestResult struct {
 	url    string
 	status string
 }
@@ -21,7 +21,7 @@ func main() {
 	results := make(map[string]string)
 
 	// channel 생성
-	c := make(chan result)
+	c := make(chan requestResult)
 
 	// 접속을 시도 할 url 목록
 	urls := []string{
@@ -43,21 +43,25 @@ func main() {
 		go hitURL(url, c)
 	}
 
-	// 실행 결과 출력
-	for url, result := range results {
-		fmt.Println(url, result)
+	// 결과를 map 에 담음
+
+	for i := 0; i < len(urls); i++ {
+		result := <-c
+		results[result.url] = result.status
+	}
+
+	// map 에 담긴 결과 출력
+	for url, status := range results {
+		fmt.Println(url, status)
 	}
 }
 
-func hitURL(url string, c chan<- result) {
-
-	// 현재 request 시도 하는 url 출력
-	fmt.Println("Checking:", url)
+func hitURL(url string, c chan<- requestResult) {
 
 	// Go reference 참고하여 url 에 Get 요청
 	resp, err := http.Get(url)
 
-	// result struct 의 status 값으로 사용 할 변수 선언
+	// requestResult struct 의 status 값으로 사용 할 변수 선언
 	status := "Ok"
 
 	// err 가 있거나 http 응답 코드가 400 과 같거나 큰 경우 예외 처리
@@ -65,5 +69,5 @@ func hitURL(url string, c chan<- result) {
 		status = "FAILED"
 	}
 
-	c <- result{url: url, status: status}
+	c <- requestResult{url: url, status: status}
 }
