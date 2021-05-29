@@ -52,7 +52,7 @@
   
 　  
 　  
-#### JOB SCRAPPER
+#### JOB SCRAPER
 - [getPages part one, goquery, go get 오류 해결][link_blog_028]  
 - [getPages part two][link_blog_029]  
   
