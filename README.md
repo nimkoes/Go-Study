@@ -55,6 +55,7 @@
 #### JOB SCRAPER
 - [getPages part one, goquery, go get 오류 해결][link_blog_028]  
 - [getPages part two][link_blog_029]  
+- [extractJob part one][link_blog_030]  
   
 　  
 　  
@@ -99,3 +100,4 @@
 
 [link_blog_028]:https://xxxelppa.tistory.com/297
 [link_blog_029]:https://xxxelppa.tistory.com/299
+[link_blog_030]:https://xxxelppa.tistory.com/300
