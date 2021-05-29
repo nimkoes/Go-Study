@@ -10,7 +10,6 @@
 　  
 　  
   ### **강의 내용 따라하며 정리**
-['쉽고 빠른 Go 시작하기' 강의 실습 코드 github 저장소 링크][link_my_go_repository]
 
 #### THEORY
  - [Go 개발 환경 설정과 Hello World (using 'VS Code')][link_blog_001]  
@@ -67,7 +66,6 @@
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
-[link_my_go_repository]:https://github.com/nimkoes/learngo
 
 [link_blog_001]:https://xxxelppa.tistory.com/270
 [link_blog_002]:https://xxxelppa.tistory.com/271
