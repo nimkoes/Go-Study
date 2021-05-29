@@ -26,11 +26,20 @@ func main() {
 
 	var jobs []extractedJob
 
-	totalPaces := getPages()
+	// 데이터를 주고 받을 channel 생성
+	c := make(chan []extractedJob)
 
-	for i := 0; i < totalPaces; i++ {
-		extractedJobs := getPage(i)
-		jobs = append(jobs, extractedJobs...)
+	totalPages := getPages()
+
+	for i := 0; i < totalPages; i++ {
+		// goroutine 으로 만들고 channel 을 넘겨준다.
+		go getPage(i, c)
+	}
+
+	// channel 로 부터 전달 받을 값의 수는 totalPages 수와 동일하므로 반복문으로 작성한다.
+	for i := 0; i < totalPages; i++ {
+		extractJobs := <-c
+		jobs = append(jobs, extractJobs...)
 	}
 
 	writeJobs(jobs)
@@ -57,9 +66,12 @@ func writeJobs(jobs []extractedJob) {
 	}
 }
 
-func getPage(page int) []extractedJob {
+func getPage(page int, mainC chan<- []extractedJob) {
 
 	var jobs []extractedJob
+
+	// 데이터를 주고 받을 channel 을 생성
+	c := make(chan extractedJob)
 
 	pageURL := baseURL + "&start=" + strconv.Itoa(page*50)
 	fmt.Println("Requesting", pageURL)
@@ -77,21 +89,30 @@ func getPage(page int) []extractedJob {
 	searchCards := doc.Find(".jobsearch-SerpJobCard")
 
 	searchCards.Each(func(i int, card *goquery.Selection) {
-		job := extractJob(card)
-		jobs = append(jobs, job)
+		// goroutine 으로 만들고 channel 을 넘겨준다.
+		go extractJob(card, c)
 	})
 
-	return jobs
+	// channel 로 부터 전달 받을 값의 수는 searchCards 의 길이와 동일하므로 반복문으로 작성한다.
+	for i := 0; i < searchCards.Length(); i++ {
+		job := <-c
+		jobs = append(jobs, job)
+	}
+
+	// return 이 없어지고 channel 에 데이터를 전송 하는 것으로 수정한다.
+	mainC <- jobs
 }
 
-func extractJob(card *goquery.Selection) extractedJob {
+// channel 의 방향을 읽어오는 것만 허용하도록 하고 extractedJob 타입을 받도록 한다.
+func extractJob(card *goquery.Selection, c chan<- extractedJob) {
 	id, _ := card.Attr("data-jk")
 	title := cleanString(card.Find(".title > a").Text())
 	location := cleanString(card.Find(".sjcl").Text())
 	salary := cleanString(card.Find(".salaryText").Text())
 	summary := cleanString(card.Find(".summary").Text())
 
-	return extractedJob{
+	// return 이 없어지고 channel 에 데이터를 전송 하는 것으로 수정한다.
+	c <- extractedJob{
 		id:       id,
 		title:    title,
 		location: location,

@@ -58,6 +58,7 @@
 - [extractJob part one][link_blog_030]  
 - [extractJob part two][link_blog_031]  
 - [Writing Jobs, save extracted data to 'csv' file][link_blog_032]  
+- [Channels Time & More Channels Baby (goroutine)][link_blog_033]  
   
 　  
 　  
@@ -102,3 +103,4 @@
 [link_blog_030]:https://xxxelppa.tistory.com/300
 [link_blog_031]:https://xxxelppa.tistory.com/301
 [link_blog_032]:https://xxxelppa.tistory.com/302
+[link_blog_033]:https://xxxelppa.tistory.com/303
