@@ -2,7 +2,7 @@
 ## programming language Go study
 　  
 　  
-![enrollment_course](https://github.com/nimkoes/Go-Study/blob/main/assets/images/enrollment_course.JPG?raw=true "enrollment_course")
+![enrollment_course](https://github.com/nimkoes/learngo/blob/main/assets/images/enrollment_course.JPG)?raw=true "enrollment_course")
 　  
 　  
   ### nomadcoders : 쉽고 빠른 Go 시작하기  
@@ -68,7 +68,15 @@
   
 　  
 　  
+#### END GOLANG COURSE
+![end_course](https://github.com/nimkoes/learngo/blob/main/assets/images/end_course.JPG)?raw=true "end_course")
+![certifications_course](https://github.com/nimkoes/learngo/blob/main/assets/images/certifications_course.JPG)?raw=true "certifications_course")
   
+　  
+  
+과정을 수료 하자마자 등록된 계정으로 수료증이 도착 했다.  
+우연한 계기로 학습하게 된 Go 지만 계속해서 써보고 싶은 언어가 되었다.
+
 
 
 [link_course]:https://nomadcoders.co/go-for-beginners/lobby
