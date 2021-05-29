@@ -2,7 +2,7 @@
 ## programming language Go study
 　  
 　  
-![enrollment_course](https://github.com/nimkoes/learngo/blob/main/assets/images/enrollment_course.JPG)?raw=true "enrollment_course")
+![enrollment_course](https://github.com/nimkoes/learngo/blob/main/assets/images/enrollment_course.JPG?raw=true "enrollment_course")
 　  
 　  
   ### nomadcoders : 쉽고 빠른 Go 시작하기  
@@ -69,8 +69,8 @@
 　  
 　  
 #### END GOLANG COURSE
-![end_course](https://github.com/nimkoes/learngo/blob/main/assets/images/end_course.JPG)?raw=true "end_course")
-![certifications_course](https://github.com/nimkoes/learngo/blob/main/assets/images/certifications_course.JPG)?raw=true "certifications_course")
+![end_course](https://github.com/nimkoes/learngo/blob/main/assets/images/end_course.JPG?raw=true "end_course")
+![certifications_course](https://github.com/nimkoes/learngo/blob/main/assets/images/certifications_course.JPG?raw=true "certifications_course")
   
 　  
   
