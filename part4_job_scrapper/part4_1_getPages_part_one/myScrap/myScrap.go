@@ -55,7 +55,7 @@ func writeJobs(jobs []extractedJob) {
 	w := csv.NewWriter(file)
 	defer w.Flush()
 
-	headers := []string{"ID", "Title", "Location", "Salary", "Summary"}
+	headers := []string{"Link", "Title", "Location", "Salary", "Summary"}
 
 	wErr := w.Write(headers)
 	checkErr(wErr)
@@ -116,10 +116,10 @@ func getPage(page int, url string, mainC chan<- []extractedJob) {
 // channel 의 방향을 읽어오는 것만 허용하도록 하고 extractedJob 타입을 받도록 한다.
 func extractJob(card *goquery.Selection, c chan<- extractedJob) {
 	id, _ := card.Attr("data-jk")
-	title := cleanString(card.Find(".title > a").Text())
-	location := cleanString(card.Find(".sjcl").Text())
-	salary := cleanString(card.Find(".salaryText").Text())
-	summary := cleanString(card.Find(".summary").Text())
+	title := CleanString(card.Find(".title > a").Text())
+	location := CleanString(card.Find(".sjcl").Text())
+	salary := CleanString(card.Find(".salaryText").Text())
+	summary := CleanString(card.Find(".summary").Text())
 
 	// return 이 없어지고 channel 에 데이터를 전송 하는 것으로 수정한다.
 	c <- extractedJob{
@@ -130,7 +130,8 @@ func extractJob(card *goquery.Selection, c chan<- extractedJob) {
 		summary:  summary}
 }
 
-func cleanString(str string) string {
+// CleanString cleans a string
+func CleanString(str string) string {
 	// strings.TrimSpace -> 문자열의 양 끝 공백 제거
 	// strings.Fields    -> 문자열을 공백 기준으로 모두 잘라 []string 으로 만듬
 	// strings.Join      -> 구분자로 이어진 문자열을 만듬
